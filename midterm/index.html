@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ramen Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style> 
+	h1 {
+		font-weight: bold;
+		font-size: 25pt;
+	}
+	div {
+		font-size: 15pt;
+	}
+	body {
+		margin: 0;
+	}
+	.nav {
+		font-size: 15pt;
+		background-color: lightgray;
+		width: 25%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		position: fixed;	
+	}
+	.nav a {
+		display: block;
+		color: #000;
+		text-decoration: none;
+	}
+	.nav a:hover {
+		background-color: #555;
+		color: white;
+	}
+	.question {
+		margin-bottom: 500pt;
+	}
+	</style>
+</head>
+<body>
+
+<!---navbar--->
+
+<div class="nav">
+	<nav>
+		<a href="index.html"><b style="font-size:20pt; line-height:150%; ">Home</b></a>
+		<a href="shuangtun.html">双豚ラーメン(shuangtun)</a>
+		<a href="kikanbotw.html">鬼金棒(kikanbotw)</a>
+		<a href="sobashinncitrus.html">柑橘 Shinn Soba(sobashinncitrus)</a>
+		<a href="TheRamenBoy.html">拉麵公子(TheRamenBoy)</a>
+	</nav>
+</div>
+<br>
+
+<!---main--->
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+	<h1 style="text-align: center; border: 3px; border-style: dashed; border-color: black; padding: 5pt; ">Ramen Test</h1>
+	<p>Help you to find your bowl of ramen! Click the description fits you the most to go to the next question.</p>
+	<p style="font-size: 20pt; font-weight: bold; color: red; margin-bottom: 40pt; ">Let's Go →</p>
+	<div class="question" id="Q1">
+		<p>Q1. Are you a Ramen freshman or a veteran?</p>
+		<li><a href="#Q2A">Freshman. (go Q2A)</a></li>
+		<li><a href="#Q2B">Veteran. (go Q2B)</a></li>
+	</div>
+	<div class="question" id="Q2A">
+		<p>Q2A. Do you enjoy typical ramen or unusual ramen?</p>
+		<li><a href="#Q3AA">Typical.</a></li>
+		<li><a href="#Q3AB">Unusual.</a></li>
+	</div>
+	<div class="question" id="Q2B">
+		<p>Q2B. Do you enjoy typical ramen or unusual ramen?</p>
+		<li><a href="#Q3BA">Typical.</a></li>
+		<li><a href="#Q3BB">Unusual.</a></li>
+	</div>
+	<div class="question" id="Q3AA">
+		<p>Q3AA. Do you prefer thick broth or light broth?</p>
+		<li><a href="shuangtun.html#shuangtun1">Thick.</a></li>
+		<li><a>Light.</a></li>
+	</div>
+	<div class="question" id="Q3AB">
+		<p>Q3AB. Do you prefer thick broth or light broth?</p>
+		<li><a href="kikanbotw.html#kikanbotw">Thick.</a></li>
+		<li><a href="sobashinncitrus.html#sobashinncitrus">Light.</a></li>
+	</div>
+	<div class="question" id="Q3BA">
+		<p>Q3BA. Do you prefer thick broth or light broth?</p>
+		<li><a href="shuangtun.html#shuangtun2">Thick.</a></li>
+		<li><a href="shuangtun.html#shuangtun1">Light.</a></li>
+	</div>
+	<div class="question" id="Q3BB">
+		<p>Q3BB. Do you prefer thick broth or light broth?</p>
+		<li><a href="TheRamenBoy.html#TheRamenBoy">Thick.</a></li>
+		<li><a href="sobashinncitrus.html#sobashinncitrus">Light.</a></li>
+	</div>
+	<div class="question">
+		<p style="color: white; ">.</p>
+	</div>
+</div>
+</body>
+</html>
