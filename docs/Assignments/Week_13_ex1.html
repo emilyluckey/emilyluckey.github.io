@@ -1,0 +1,61 @@
+<!DOCTYcPE html>
+<html>
+<head>
+<title>W13_ex1</title>
+<style>
+#nav {
+	position:sticky;
+	top: 0;
+	background-color: lightgray;
+}
+#nav a {
+	text-decoration: none;
+	color: black;
+	font-size: 25pt;
+	margin: 15pt;
+}
+#nav a:hover {
+	background-color: gray;
+	color: white;
+}
+#div_fixed {
+	position: fixed;
+	background-color: skyblue;  
+	width: 300px;
+	top: 100pt;
+	text-align: center;
+}
+#div_absolute {
+	position: absolute;
+	background-color: pink;
+	width: 300px;
+	left: 301px;
+	top: 0;
+}
+#div_relative {
+	position: relative;
+	background-color: yellow;
+	width: 300px;
+	left: 301px;
+	top: 15px;
+}
+</style>
+</head>
+<body>
+	<div id="nav">
+		<a href="/">Home</a>
+		<a href="Week_13_ex1.html">W13_ex1</a>
+		<a href="">W13_ex2</a>
+		<a href="">W13_ex3</a>
+	</div>
+	<div id="div_fixed">
+		<h1>div_fixed</h1>
+		<div id="div_absolute">
+			<h1>div_absolute</h1>
+		</div>
+		<div id="div_relative">
+			<h1>div_relative</h1>
+		</div>
+	</div>
+</body>
+</html>
