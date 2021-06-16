@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+	position: sticky;
+}
+#nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	background-color: lightgray;
+	height: 10%; 
+	top: 0;
+}
+#nav a {
+	text-decoration: None;
+	color: black;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 1%;
+}
+#nav a:hover {
+	background-color: gray;
+	color: white;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+#tabble {
+	background-image: url("images/background.jpg");
+	font-family: Arial;
+	font-size: 120%;
+	text-align: center;
+	border: 5px dashed;
+	color: white;
+	border-collapse: collapse;
+	width: 80%;
+}
+
+#tabble td, #tabble th {
+	border: 2px solid;
+	padding: 10px;
+}
+
+#tabble tr:nth-child(odd){
+	background-color: rgba(200, 200, 200, 0.5);
+}
+
+#tabble th {
+	font-family: Impact;
+	font-size: 150%;
+	height: 50px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: rgba(200, 200, 200, 0.5);
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<a href="/">Home</a>
+			<a href="Week_15_ex1.html">W15_ex1</a>
+			<a href="Week_15_ex2.html">W15_ex2</a>
+		</div>
+	</div>
+	<div class="container">
+		<table id="tabble">
+			<tr>
+				<th>Name</th>
+				<th>STUDENT ID</th>
+				<th>GRADE</th>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>1</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<td>B</td>
+				<td>2</td>
+				<td>95</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>3</td>
+				<td>85</td>
+			</tr>
+			<tr>
+				<td>D</td>
+				<td>4</td>
+				<td>75</td>
+			</tr>
+			<tr>
+				<td>E</td>
+				<td>5</td>
+				<td>80</td>
+			</tr>
+		</table>
+	</div>
+<hr>
+<a href="https://www.rawpixel.com/search/background?sort=curated&page=1">background image</a>
+</body>
+</html>

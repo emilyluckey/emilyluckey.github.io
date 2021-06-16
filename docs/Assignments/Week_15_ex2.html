@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+	position: sticky;
+}
+#nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	background-color: lightgray;
+	height: 10%; 
+	top: 0;
+}
+#nav a {
+	text-decoration: None;
+	color: black;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 1%;
+}
+#nav a:hover {
+	background-color: gray;
+	color: white;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5%;
+	font-family: Arial;
+}
+ul {
+	background-color: skyblue;
+	background-image: linear-gradient(white, skyblue);
+	list-style-type: circle;
+	width: 80%;
+}
+li {
+	height: 20px;
+}
+li:hover {
+	border-color: black;
+	font-weight: bold;
+	font-size: 120%;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<a href="/">Home</a>
+			<a href="Week_15_ex1.html">W15_ex1</a>
+			<a href="Week_15_ex2.html">W15_ex2</a>
+		</div>
+	</div>
+	<div class="container">
+		<p style="font-size: 150%; font-weight: bold;">I want...</p>
+		<ul>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Coca Cola</li>
+		</ul>
+	</div>
+</body>
+</html>
