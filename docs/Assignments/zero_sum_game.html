@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>Zero-sum Game</title>
+<style>
+#header {
+	position: sticky;
+}
+#nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	background-color: lightgray;
+	height: 10%; 
+	top: 0;
+}
+#nav a {
+	text-decoration: None;
+	color: black;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 1%;
+}
+#nav a:hover {
+	background-color: gray;
+	color: white;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+#tabble {
+	float: right;
+	background-image: url("images/background.jpg");
+	font-family: Arial;
+	font-size: 120%;
+	text-align: center;
+	color: white;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px;
+	border: 2px solid;
+}
+
+#tabble td, #tabble th {
+	border: 2px solid;
+	padding: 10px;
+	font-weight: normal;
+}
+.tooltip {
+	background-color: rgba(255, 0, 0, 0.5); 
+}
+.tooltip .tooltiptext {
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	font-size: 80%;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<a href="game_theory.html">Home</a>
+			<a href="zero_sum_game.html">Zero-sum Game</a>
+			<a href="prisoner_dilemma.html">Prisoner Dilemma</a>
+			<a href="try.html">Try It Yourself</a>
+		</div>
+	</div>
+	<div class="container">
+		<div style="width: 130%;">
+			<h2>What is Zero-sum Game? </h2>
+			<p>In game theory and economic theory, a zero-sum game is a mathematical representation of a situation in which <b>an advantage that is won by one of two sides is lost by the other</b>. If the total gains of the participants are added up, and the total losses are subtracted, they will sum to zero. Thus, cutting a cake, where taking a more significant piece reduces the amount of cake available for others as much as it increases the amount available for that taker, is a zero-sum game if all participants value each unit of cake equally. Other examples of zero-sum games in daily life include games like poker, chess, and bridge where one person gains and another person loses, which results in a zero-net benefit for every player. In the markets and financial instruments, futures contracts and options are zero-sum games as well. Nevertheless, the situation like the stock market etc. is not a zero-sum game because investors could gain profit or loss from share price influences by profit forecasts or economic outlooks rather than gain profit from other investors lost.</p>
+			<p>In contrast, non-zero-sum describes a situation in which the interacting parties' aggregate gains and losses can be less than or more than zero. A zero-sum game is also called a <i>strictly competitive game</i>, while non-zero-sum games can be either competitive or non-competitive. Zero-sum games are most often solved with the minimax theorem which is closely related to linear programming duality, or with <b>Nash equilibrium</b>.</p>
+			<p><b>Prisoner's Dilemma</b> is a classical non-zero-sum game.</p>
+		</div>
+		<table id="tabble">
+			<col width="40%" />
+			<col width="30%" />
+			<col width="30%" />
+			<tr>
+				<th>Player 1 \ Player 2</th>
+				<th>Plan L</th>
+				<th>Plan R</th>
+			</tr>
+			<tr>
+				<td>Plan U</td>
+				<td>(3,-3)</td>
+				<td class="tooltip">
+					(0,0)
+					<br>
+					<span class="tooltiptext">Nash Equilibrium</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Plan D</td>
+				<td>(1,-1)</td>
+				<td>(-2,2)</td>
+			</tr>
+		</table>
+	</div>
+<hr>
+<a href="https://www.rawpixel.com/search/background?sort=curated&page=1">background image</a>
+<a href="https://en.wikipedia.org/wiki/Zero-sum_game">wiki</a>
+</body>
+</html>

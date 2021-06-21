@@ -1,0 +1,167 @@
+<html>
+<head>
+	<title>Try It Yourself</title>
+<style>
+#header {
+	position: sticky;
+}
+#nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	background-color: lightgray;
+	height: 10%; 
+	top: 0;
+}
+#nav a {
+	text-decoration: None;
+	color: black;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 1%;
+}
+#nav a:hover {
+	background-color: gray;
+	color: white;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 5%;
+}
+#tabble {
+	background-image: url("images/background.jpg");
+	font-family: Arial;
+	font-size: 120%;
+	text-align: center;
+	color: white;
+	border-collapse: collapse;
+	margin: 10px;
+	border: 2px solid;
+	width: 50%;
+}
+
+#tabble td, #tabble th {
+	border: 2px solid;
+	padding: 10px;
+	font-weight: normal;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	font-size: 80%;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+}
+.tooltip:hover {
+	background-color: rgba(255, 0, 0, 0.5); 
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<a href="game_theory.html">Home</a>
+			<a href="zero_sum_game.html">Zero-sum Game</a>
+			<a href="prisoner_dilemma.html">Prisoner Dilemma</a>
+			<a href="try.html">Try It Yourself</a>
+		</div>
+	</div>
+	<div class="container">
+		<div style="text-align: left;">
+		<h2>Find the Nash Equilibrium!</h2>
+		<p>Put the mouse on your anwser, it would show the text if you are right. (Sometimes the anwser might be more than 1)</p>
+		</div>
+		<table id="tabble">
+			<col width="40%" />
+			<col width="30%" />
+			<col width="30%" />
+			<tr>
+				<th>Player 1 \ Player 2</th>
+				<th>Plan L</th>
+				<th>Plan R</th>
+			</tr>
+			<tr>
+				<td>Plan U</td>
+				<td>(2,-2)</td>
+				<td class="tooltip">
+					(0,0)
+					<br>
+					<span class="tooltiptext">Bingo!</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Plan D</td>
+				<td>(1,-1)</td>
+				<td>(-2,2)</td>
+			</tr>
+		</table>
+		<table id="tabble">
+			<col width="40%" />
+			<col width="30%" />
+			<col width="30%" />
+			<tr>
+				<th>Mom \ Child</th>
+				<th>Go to school</th>
+				<th>Stay home</th>
+			</tr>
+			<tr>
+				<td>Go to school</td>
+				<td class="tooltip">
+					(5,1)
+					<br>
+					<span class="tooltiptext">Bingo!</span>
+				</td>
+				<td>(-1,-3)</td>
+			</tr>
+			<tr>
+				<td>Stay home</td>
+				<td>(-3,-2)</td>
+				<td>(-2,1)</td>
+			</tr>
+		</table>
+		<table id="tabble">
+			<col width="40%" />
+			<col width="30%" />
+			<col width="30%" />
+			<tr>
+				<th>Wife \ Husband</th>
+				<th>Shopping</th>
+				<th>Baseball</th>
+			</tr>
+			<tr>
+				<td>Shopping</td>
+				<td class="tooltip">
+					(3,2)
+					<br>
+					<span class="tooltiptext">Bingo!</span>
+				</td>
+				<td>(-1,-1)</td>
+			</tr>
+			<tr>
+				<td>Baseball</td>
+				<td>(-1,-1)</td>
+				<td class="tooltip">
+					(1,2)
+					<br>
+					<span class="tooltiptext">Bingo!</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+<hr>
+<a href="https://www.rawpixel.com/search/background?sort=curated&page=1">background image</a>
+</body>
+</html>

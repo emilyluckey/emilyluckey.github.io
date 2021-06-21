@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>Prisoner Dilemma</title>
+<style>
+#header {
+	position: sticky;
+}
+#nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	background-color: lightgray;
+	height: 10%; 
+	top: 0;
+}
+#nav a {
+	text-decoration: None;
+	color: black;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 1%;
+}
+#nav a:hover {
+	background-color: gray;
+	color: white;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+#tabble {
+	float: right;
+	background-image: url("images/background.jpg");
+	font-family: Arial;
+	font-size: 120%;
+	text-align: center;
+	color: white;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px;
+	border: 2px solid;
+}
+
+#tabble td, #tabble th {
+	border: 2px solid;
+	padding: 10px;
+	font-weight: normal;
+}
+.tooltip {
+	background-color: rgba(255, 0, 0, 0.5); 
+}
+.tooltip .tooltiptext {
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	font-size: 80%;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<a href="game_theory.html">Home</a>
+			<a href="zero_sum_game.html">Zero-sum Game</a>
+			<a href="prisoner_dilemma.html">Prisoner Dilemma</a>
+			<a href="try.html">Try It Yourself</a>
+		</div>
+	</div>
+	<div class="container">
+		<div style="width: 130%;">
+			<h2>What is Prisoner Dilemma? </h2>
+			<p>The prisoner's dilemma is a standard example of a game analyzed in game theory that shows why two completely rational individuals <b>might not cooperate</b>, even if it appears that it is in their best interests to do so. It was originally framed by Merrill Flood and Melvin Dresher while working at RAND in 1950. Albert W. Tucker formalized the game with prison sentence rewards and named it "prisoner's dilemma", presenting it as follows:</p>
+			<div style="margin-left: 2%;">
+				<p>Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge, but they have enough to convict both on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity either to betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent. The possible outcomes are:</p>
+				<ul>
+					<li>If A and B each betray the other, each of them serves two years in prison</li>
+					<li>If A betrays B but B remains silent, A will be set free and B will serve three years in prison</li>
+					<li>If A remains silent but B betrays A, A will serve three years in prison and B will be set free</li>
+					<li>If A and B both remain silent, both of them will serve only one year in prison (on the lesser charge)</li>
+				</ul>
+			</div>
+		</div>
+		<table id="tabble">
+			<col width="40%" />
+			<col width="30%" />
+			<col width="30%" />
+			<tr>
+				<th>Prisoner 1 \ Prisoner 2</th>
+				<th>Cooperate</th>
+				<th>Defect</th>
+			</tr>
+			<tr>
+				<td>Cooperate</td>
+				<td>(-1,-1)</td>
+				<td>(-5,0)</td>
+			</tr>
+			<tr>
+				<td>Defect</td>
+				<td>(0,-5)</td>
+				<td class="tooltip">
+					(-3,-3)
+					<br>
+					<span class="tooltiptext">Nash Equilibrium</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+<hr>
+<a href="https://www.rawpixel.com/search/background?sort=curated&page=1">background image</a>
+<a href="https://en.wikipedia.org/wiki/Prisoner%27s_dilemma">wiki</a>
+</body>
+</html>

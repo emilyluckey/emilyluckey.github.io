@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Game Theory</title>
+<style>
+#header {
+	position: sticky;
+}
+#nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	background-color: lightgray;
+	height: 10%; 
+	top: 0;
+}
+#nav a {
+	text-decoration: None;
+	color: black;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 1%;
+}
+#nav a:hover {
+	background-color: gray;
+	color: white;
+}
+.main {
+	margin-top: 5%;
+	width: auto;
+	overflow: auto;
+}
+.left {
+	float: left;
+	width: 60%;
+}
+.right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.left #column {
+	margin: 2px;
+	font-size: 130%;
+	padding: 5px;
+}
+.right #column {
+	background-color: #EBECF0;
+	margin: 2px;
+	float: right;
+	padding: 5px;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<a href="game_theory.html">Home</a>
+			<a href="zero_sum_game.html">Zero-sum Game</a>
+			<a href="prisoner_dilemma.html">Prisoner Dilemma</a>
+			<a href="try.html">Try It Yourself</a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="left"><div id="column">
+			<h2>What is Game Theory? </h2>
+			<p>Game theory is the study of mathematical models of strategic interaction among rational decision-makers. It has applications in all fields of <b>social science</b>, as well as in logic, systems science and computer science. Originally, it addressed zero-sum games, in which each participant's gains or losses are exactly balanced by those of the other participants. In the 21st century, game theory applies to a wide range of behavioral relations, and is now an umbrella term for the science of logical decision making in humans, animals, and computers.</p>
+			<p>Modern game theory began with the idea of mixed-strategy equilibria in two-person zero-sum games and its proof by John von Neumann. Von Neumann's original proof used the Brouwer fixed-point theorem on continuous mappings into compact convex sets, which became a standard method in game theory and mathematical economics. His paper was followed by the 1944 book Theory of Games and Economic Behavior, co-written with Oskar Morgenstern, which considered cooperative games of several players. The second edition of this book provided an axiomatic theory of expected utility, which allowed mathematical statisticians and economists to treat decision-making under uncertainty.</p>
+			<p>Game theory was developed extensively in the 1950s by many scholars. It was explicitly applied to evolution in the 1970s, although similar developments go back at least as far as the 1930s. Game theory has been widely recognized as an important tool in many fields. As of 2014, with the Nobel Memorial Prize in Economic Sciences going to game theorist Jean Tirole, eleven game theorists have won the economics Nobel Prize. John Maynard Smith was awarded the Crafoord Prize for his application of evolutionary game theory.</p>
+		</div></div>
+		<div class="right">
+		<div id="column">
+			<h2>Nash Equilibrium</h2>
+			<p>In game theory, the Nash equilibrium, named after the mathematician John Forbes Nash Jr., is the most common way to define the solution of a non-cooperative game  involving two or more players. In a Nash equilibrium, each player is assumed to know the equilibrium strategies of the other players and no player has anything to gain by changing only their own strategy. The principle of Nash equilibrium dates back to the time of Cournot, who applied it to competing firms choosing outputs.</p>
+			<p>If each player has chosen a strategy — an action plan choosing their own actions based on what has happened so far in the game — and <b>no player can increase their own expected payoff by changing their strategy while the other players keep theirs unchanged</b>, then the current set of strategy choices constitutes a Nash equilibrium.</p>
+			<p>If two players Alice and Bob choose strategies A and B, (A, B) is a Nash equilibrium if Alice has no other strategy available that does better than A at maximizing her payoff in response to Bob choosing B, and Bob has no other strategy available that does better than B at maximizing his payoff in response to Alice choosing A. In a game in which Carol and Dan are also players, (A, B, C, D) is a Nash equilibrium if A is Alice's best response to (B, C, D), B is Bob's best response to (A, C, D), and so forth.</p>
+		</div>
+		<div id="column">
+			<h2>Pareto efficiency</h2>
+			<p>Pareto efficiency or Pareto optimality is a situation where no individual or preference criterion can be better off without making at least one individual or preference criterion worse off or without any loss thereof. The concept is named after Vilfredo Pareto (1848–1923), Italian civil engineer and economist, who used the concept in his studies of economic efficiency and income distribution. The following three concepts are closely related:</p>
+			<ul>
+				<li>Given an initial situation, a <b>Pareto improvement</b> is a new situation where some agents will gain, and no agents will lose</li>
+				<li>A situation is called <b>Pareto dominated</b> if there exists a possible Pareto improvement</li>
+				<li>A situation is called Pareto optimal or Pareto efficient if no change could lead to improved satisfaction for some agent without some other agent losing or if there is no scope for further Pareto improvement</li>
+			</ul>
+		</div></div>
+	</div>
+<hr>
+<a href="https://en.wikipedia.org/wiki/Game_theory">Game Theory</a>
+<a href="https://en.wikipedia.org/wiki/Nash_equilibrium">Nash Equilibrium</a>
+<a href="https://en.wikipedia.org/wiki/Pareto_efficiency">Pareto efficiency</a>
+</body>
+</html>
